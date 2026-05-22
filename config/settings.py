@@ -79,9 +79,12 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
     "https://fake-review-detector-blue.vercel.app",
+    "https://www.amazon.in",
+    "https://www.amazon.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
